@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#body{
+    background-color: rgb(33, 37, 42);
+}
+
+.scale-8{
+    scale: 0.8;
+}
+
+/* sezione NAV */
+
+.imgLogo{
+    height: 40px;
+}
+
+nav > div > div > ul{
+    scale: 0.8;
+    margin-left: -40px;
+}
+
+.el-dropdown{
+    transform: translateX(-60%);
+}
+
