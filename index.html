@@ -6,12 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="icon" href="movies/logoHtml.jpeg" type="image/x-icon">
+
+    <title>Esame Rseplica Netflix</title>
 </head>
-<body>
+<body id="body">
+
+    <!-- sezione NAV -->
+    <nav class="sticky-top z-1 p-3 navbar bg-dark navbar-expand-lg position-relative"  data-bs-theme="dark">
+        <div class="container-fluid">
+
+            <!-- sx -->
+          <a class="navbar-brand" href="#">
+            <img class="imgLogo" src="movies/Netflix_Logo_RGB.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TV Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My List</a>
+              </li>
+            </ul>
+
+            <!-- dx -->
+            <section class="d-flex position-absolute end-0 top-md-50">
+              <form class="d-flex" role="search">
+              <input class="d-none form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn " type="submit">
+                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+              </button>
+            </form>
+
+            <button class="btn " type="submit">
+                KIDS
+            </button>
+            <button class="btn " type="submit">
+                <i class="fa-solid fa-bell" style="color: #ffffff;"></i>
+            </button>
+            <div class="dropdown">
+                <button class="position-relative btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="imgLogo scale-8 " src="movies/fotoboh.png" alt="">
+                </button>
+                <ul class="el-dropdown dropdown-menu">
+                  <li><a class="dropdown-item" href="#">
+                    <i class="m-3 fa-solid fa-user" style="color: #ffffff;"></i>
+                    Profile</a></li>
+                  <li><a class="dropdown-item" href="#">
+                    <i class="m-3 fa-solid fa-users" style="color: #ffffff;"></i>
+                    Accounts</a></li>
+                  <li><a class="dropdown-item" href="#">
+                    <i class="m-3 fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    Other</a></li>
+                </ul>
+            </div>
+
+                
+            </section>
+
+          </div>
+        </div>
+    </nav>
     
 </body>
 
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/1ec4c907d2.js" crossorigin="anonymous"></script>
 
 </html>
