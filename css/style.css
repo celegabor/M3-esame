@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Roboto', sans-serif;
 }
 
 #body{
@@ -11,6 +13,7 @@
 .scale-8{
     scale: 0.8;
 }
+
 
 /* sezione NAV */
 
@@ -26,4 +29,53 @@ nav > div > div > ul{
 .el-dropdown{
     transform: translateX(-60%);
 }
+
+/* sezione viste */
+
+.custom-btn-show{
+    background-color: black;
+    border: 1px solid white;
+    padding: -5px;
+}
+
+.generi:hover{
+    background-color: rgb(49, 48, 48) !important;
+    color: white !important;
+}
+
+.bg-custom-black{
+    background-color: #000000 !important;
+    border: 1px solid white !important;
+    padding: 2px 5px !important; 
+}
+
+.vista i{
+    padding: 6px 10px;
+    border: 1px solid white;
+}
+
+.vista i:nth-child(2){
+    border-left: 0;
+}
+
+/* sezione caroselli */
+
+.customCarousel{
+    width: 100vw;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.w-16{
+    width: 16%;
+}
+
+.w-24{
+    width: 24%;
+}
+
+.w-48{
+    width: 48%;
+}
+
 
