@@ -18,84 +18,96 @@
 <body id="body">
 
     <!-- sezione NAV -->
-    <nav class="sticky-top z-1 p-3 navbar bg-dark navbar-expand-lg position-relative"  data-bs-theme="dark">
-        <div class="container-fluid">
+    <div class="positionNav ">
+        <nav class="z-1 p-3 navbar bg-dark navbar-expand-lg position-relative "  data-bs-theme="dark">
+            <div class="container-fluid">
 
-            <!-- sx -->
-          <a class="navbar-brand" href="#">
-            <img class="imgLogo" src="movies/Netflix_Logo_RGB.png" alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">TV Shows</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Movies</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Recently Added</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">My List</a>
-              </li>
-            </ul>
-
-            <!-- dx -->
-            <section class="d-flex position-absolute end-0 top-md-50">
-              <form class="d-flex" role="search">
-              <input class="d-none form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn " type="submit">
-                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
-              </button>
-            </form>
-
-            <button class="btn " type="submit">
-                KIDS
-            </button>
-            <button class="btn " type="submit">
-                <i class="fa-solid fa-bell" style="color: #ffffff;"></i>
-            </button>
-            <div class="dropdown">
-                <button class="position-relative btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img class="imgLogo scale-8 " src="movies/fotoboh.png" alt="">
+                <!-- sx -->
+            <a class="navbar-brand" href="#">
+                <img class="imgLogo" src="movies/Netflix_Logo_RGB.png" alt="">
+            </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <ul class="el-dropdown dropdown-menu">
-                  <li><a class="dropdown-item" href="#">
-                    <i class="m-3 fa-solid fa-user" style="color: #ffffff;"></i>
-                    Profile</a></li>
-                  <li><a class="dropdown-item" href="#">
-                    <i class="m-3 fa-solid fa-users" style="color: #ffffff;"></i>
-                    Accounts</a></li>
-                  <li><a class="dropdown-item" href="#">
-                    <i class="m-3 fa-solid fa-ellipsis" style="color: #ffffff;"></i>
-                    Other</a></li>
-                </ul>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="overButton nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="overButton nav-link" href="#">TV Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="overButton nav-link" href="#">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="overButton nav-link" href="#">Recently Added</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="overButton nav-link" href="#">My List</a>
+                        </li>
+                    </ul>
+
+                    <!-- dx -->
+                    <section id="dx" class="d-flex position-absolute end-0 top-md-50">
+        
+                        <!-- search -->
+                        <div id="sectionSearch" class="navbar d-block d-sm-flex">
+                            <div class="container">
+                            <form class="d-flex align-items-center position-relative" role="search">
+                                <input id="searchBar" class=" d-block d-sm-flex bg-dark form-control customSearch overflow-hidden" type="search" placeholder="    Search" aria-label="   Search">
+                                <i id="searchButton" onclick="search()" class="tastoSearch position-absolute end-0 p-2 fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                            </form>
+                            </div>
+                        </div>
+
+                        <!-- kids -->
+                        <button class="btn overButton" type="submit">
+                            KIDS
+                        </button>
+
+                        <!-- bell -->
+                        <button class="btn " type="submit">
+                            <i class="overButton fa-solid fa-bell" style="color: #ffffff;"></i>
+                        </button>
+
+                        <!-- profile -->
+                        <div class="dropdown ">
+                            <button class="position-relative btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="imgLogo scale-8 " src="movies/fotoboh.png" alt="">
+                            </button>
+                            <ul class="el-dropdown dropdown-menu overflow-hidden">
+                            <li><a class="overButton dropdown-item" href="#">
+                                <i class="overButton m-3 fa-solid fa-user" style="color: #ffffff;"></i>
+                                Profile</a></li>
+                            <li><a class="overButton dropdown-item" href="#">
+                                <i class="m-3 fa-solid fa-users" style="color: #ffffff;"></i>
+                                Accounts</a></li>
+                            <li><a class="overButton dropdown-item" href="#">
+                                <i class="m-3 fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                                Other</a></li>
+                            </ul>
+                        </div>
+
+                        
+                    </section>
+
+                </div>
             </div>
-
-                
-            </section>
-
-          </div>
-        </div>
-    </nav>
+        </nav>
+ 
+    </div>
 
     <!-- sezione shows -->
-
     <section>
-        <div class="px-4 d-sm-flex justify-content-between align-items-center">
+        <div class="px-sm-3 d-sm-flex justify-content-between align-items-center">
             
             <!-- sx -->
             <div class="show d-flex align-items-center">
 
-                <p class="text-white fs-3 p-4 mb-0">TV Shows</p>
+                <p class="text-white font-custom p-4 mb-0">TV Shows</p>
 
                 <div class="dropdown">
                     <button class="btn dropdown-toggle bg-custom-black text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -110,17 +122,20 @@
             </div>
 
             <!-- dx -->
-            <div class="vista text-white text-sm-center ">
-                <i class="fa-solid fa-bars" style="color: #ffffff;"></i><i class="fa-solid fa-table-cells-large" style="color: #ffffff;"></i>
+            <div class="vista text-white text-sm-center d-flex mx-5">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
+                    <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+                  </svg>
             </div>
         </div>
     </section>
 
      <!-- caroselli -->
-     <section>
+     <section id="caroselli" class="mb-5 p-4">
 
         <!-- #1 -->
-        <div>
+        <div class="carosello">
                     <!-- carosello 1 lg -->
             <div id="carouselExampleIndicators1-1" class="carousel d-none d-lg-block slide p-4">
 
@@ -317,7 +332,7 @@
         </div>
 
         <!-- #2 -->
-        <div>
+        <div class="carosello">
                     <!-- carosello 1 lg -->
             <div id="carouselExampleIndicators2-1" class="carousel d-none d-lg-block slide p-4">
 
@@ -326,8 +341,7 @@
                 <div class="carousel-inner position-relative">
                     <div class="carousel-item customCarousel active">
 
-                    <!-- <img src="movies/1.png" class="img-fluid w-16" alt="movies1"> -->
-                    
+                
                     <img src="movies/13.png" class="img-fluid w-16" alt="movies1">
 
                     <img src="movies/14.png" class="img-fluid w-16" alt="movies2">
@@ -514,7 +528,7 @@
         </div>
 
         <!-- #3 -->
-        <div>
+        <div class="carosello">
                     <!-- carosello 1 lg -->
             <div id="carouselExampleIndicators3-1" class="carousel d-none d-lg-block slide p-4">
 
@@ -707,8 +721,648 @@
             </div>
 
         </div>
+        <!-- #4 -->
+        <div class="carosello">
+                    <!-- carosello 1 lg -->
+            <div id="carouselExampleIndicators4-1" class="carousel d-none d-lg-block slide p-4">
+
+                <p class="text-white fs-5">Trending Now</p>
+
+                <div class="carousel-inner position-relative">
+                    <div class="carousel-item customCarousel active">
+
+                    <!-- <img src="movies/1.png" class="img-fluid w-16" alt="movies1"> -->
+                    
+                    <img src="movies/1.png" class="img-fluid w-16" alt="movies1">
+
+                    <img src="movies/2.png" class="img-fluid w-16" alt="movies2">
+
+                    <img src="movies/3.png" class="img-fluid w-16" alt="movies3">
+
+                    <img src="movies/4.png" class="img-fluid w-16" alt="movies4">
+
+                    <img src="movies/5.png" class="img-fluid w-16" alt="movies5">
+
+                    <img src="movies/6.png" class="img-fluid w-16" alt="movies6">
+
+                    <img src="movies/7.png" class="img-fluid w-16" alt="movies6">
+
+
+                    </div>
+
+                    <div class="carousel-item customCarousel">
+                    
+                        <img src="movies/7.png" class="img-fluid w-16" alt="movies6">
+
+                        <img src="movies/8.png" class="img-fluid w-16" alt="movies6">
+    
+                        <img src="movies/9.png" class="img-fluid w-16" alt="movies6">
+    
+                        <img src="movies/10.png" class="img-fluid w-16" alt="movies6">
+    
+                        <img src="movies/11.png" class="img-fluid w-16" alt="movies6">
+    
+                        <img src="movies/12.png" class="img-fluid w-16" alt="movies6">
+
+                        <img src="movies/1.png" class="img-fluid w-16" alt="movies6">
+
+                    </div>
+                </div>
+                                
+
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4-1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators4-1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+            </div>
+            <!-- carosello 1 sm-lg -->
+            <div id="carouselExampleIndicators4-2" class="carousel d-none d-sm-block d-lg-none slide p-4">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item customCarousel active">
+                    
+                    <img src="movies/1.png" class="img-fluid w-24" alt="movies1">
+
+                    <img src="movies/2.png" class="img-fluid w-24" alt="movies2">
+
+                    <img src="movies/3.png" class="img-fluid w-24" alt="movies3">
+
+                    <img src="movies/4.png" class="img-fluid w-24" alt="movies4">
+
+                    <img src="movies/5.png" class="img-fluid w-24" alt="movies5">
+
+                    </div>
+                    
+                    <div class="carousel-item customCarousel">
+                    
+                        <img src="movies/5.png" class="img-fluid w-24" alt="movies5">
+
+                        <img src="movies/6.png" class="img-fluid w-24" alt="movies6">
+    
+                        <img src="movies/7.png" class="img-fluid w-24" alt="movies6">
+
+                        <img src="movies/8.png" class="img-fluid w-24" alt="movies6">
+    
+                        <img src="movies/9.png" class="img-fluid w-24" alt="movies6">
+                    
+
+                    </div>
+
+                    <div class="carousel-item customCarousel">
+
+                        <img src="movies/9.png" class="img-fluid w-24" alt="movies6">
+    
+                        <img src="movies/10.png" class="img-fluid w-24" alt="movies6">
+    
+                        <img src="movies/11.png" class="img-fluid w-24" alt="movies6">
+    
+                        <img src="movies/12.png" class="img-fluid w-24" alt="movies6">
+
+                        <img src="movies/1.png" class="img-fluid w-24" alt="movies6">
+
+                    </div>
+                </div>
+                                
+
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4-2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators4-2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+            </div>
+            <!-- carosello 1 sm -->
+            <div id="carouselExampleIndicators4-3" class="carousel d-sm-none slide p-4">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item customCarousel active">
+                    
+                    <img src="movies/1.png" class="img-fluid w-48" alt="movies1">
+
+                    <img src="movies/2.png" class="img-fluid w-48" alt="movies2">
+
+                    <img src="movies/3.png" class="img-fluid w-48" alt="movies3">
+
+                    </div>
+                    
+                    <div class="carousel-item customCarousel">
+                    
+                        <img src="movies/3.png" class="img-fluid w-48" alt="movies5">
+
+                        <img src="movies/4.png" class="img-fluid w-48" alt="movies6">
+    
+                        <img src="movies/5.png" class="img-fluid w-48" alt="movies6">
+
+                    </div>
+
+                    <div class="carousel-item customCarousel">
+                    
+                    <img src="movies/5.png" class="img-fluid w-48" alt="movies1">
+
+                    <img src="movies/6.png" class="img-fluid w-48" alt="movies2">
+
+                    <img src="movies/7.png" class="img-fluid w-48" alt="movies3">
+
+                    </div>
+                    
+                    <div class="carousel-item customCarousel">
+                    
+                        <img src="movies/7.png" class="img-fluid w-48" alt="movies5">
+
+                        <img src="movies/8.png" class="img-fluid w-48" alt="movies6">
+    
+                        <img src="movies/9.png" class="img-fluid w-48" alt="movies6">
+
+                    </div>
+
+                    <div class="carousel-item customCarousel">
+
+                        <img src="movies/9.png" class="img-fluid w-48" alt="movies6">
+    
+                        <img src="movies/10.png" class="img-fluid w-48" alt="movies6">
+
+                        <img src="movies/11.png" class="img-fluid w-48" alt="movies6">
+
+                    </div>
+                    <div class="carousel-item customCarousel">
+
+                        <img src="movies/11.png" class="img-fluid w-48" alt="movies6">
+    
+                        <img src="movies/12.png" class="img-fluid w-48" alt="movies6">
+
+                        <img src="movies/1.png" class="img-fluid w-48" alt="movies6">
+                    </div>
+                </div>
+                                
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4-3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators4-3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+            </div>
+
+        </div>
+
+        <!-- #5 -->
+        <div class="carosello">
+                    <!-- carosello 1 lg -->
+            <div id="carouselExampleIndicators5-1" class="carousel d-none d-lg-block slide p-4">
+
+                <p class="text-white fs-5">Watch It Again</p>
+
+                <div class="carousel-inner position-relative">
+                    <div class="carousel-item customCarousel active">
+
+                    <!-- <img src="movies/1.png" class="img-fluid w-16" alt="movies1"> -->
+                    
+                    <img src="movies/13.png" class="img-fluid w-16" alt="movies1">
+
+                    <img src="movies/14.png" class="img-fluid w-16" alt="movies2">
+
+                    <img src="movies/15.png" class="img-fluid w-16" alt="movies3">
+
+                    <img src="movies/16.png" class="img-fluid w-16" alt="movies4">
+
+                    <img src="movies/17.png" class="img-fluid w-16" alt="movies5">
+
+                    <img src="movies/18.png" class="img-fluid w-16" alt="movies6">
+
+                    <img src="movies/11.png" class="img-fluid w-16" alt="movies6">
+
+
+                    </div>
+
+                    <div class="carousel-item customCarousel">
+                    
+                        <img src="movies/11.png" class="img-fluid w-16" alt="movies6">
+
+                        <img src="movies/5.png" class="img-fluid w-16" alt="movies6">
+    
+                        <img src="movies/7.png" class="img-fluid w-16" alt="movies6">
+    
+                        <img src="movies/2.png" class="img-fluid w-16" alt="movies6">
+    
+                        <img src="movies/3.png" class="img-fluid w-16" alt="movies6">
+    
+                        <img src="movies/12.png" class="img-fluid w-16" alt="movies6">
+
+                        <img src="movies/13.png" class="img-fluid w-16" alt="movies6">
+
+                    </div>
+                </div>
+                                
+
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5-1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators5-1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+            </div>
+            <!-- carosello 1 sm-lg -->
+            <div id="carouselExampleIndicators5-2" class="carousel d-none d-sm-block d-lg-none slide p-4">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item customCarousel active">
+                    
+                    <img src="movies/13.png" class="img-fluid w-24" alt="movies1">
+
+                    <img src="movies/14.png" class="img-fluid w-24" alt="movies2">
+
+                    <img src="movies/15.png" class="img-fluid w-24" alt="movies3">
+
+                    <img src="movies/16.png" class="img-fluid w-24" alt="movies4">
+
+                    <img src="movies/17.png" class="img-fluid w-24" alt="movies5">
+
+                    </div>
+                    
+                    <div class="carousel-item customCarousel">
+                    
+                        <img src="movies/17.png" class="img-fluid w-24" alt="movies5">
+
+                        <img src="movies/18.png" class="img-fluid w-24" alt="movies6">
+    
+                        <img src="movies/11.png" class="img-fluid w-24" alt="movies6">
+
+                        <img src="movies/5.png" class="img-fluid w-24" alt="movies6">
+    
+                        <img src="movies/7.png" class="img-fluid w-24" alt="movies6">
+                    
+
+                    </div>
+
+                    <div class="carousel-item customCarousel">
+
+                        <img src="movies/7.png" class="img-fluid w-24" alt="movies6">
+    
+                        <img src="movies/12.png" class="img-fluid w-24" alt="movies6">
+    
+                        <img src="movies/3.png" class="img-fluid w-24" alt="movies6">
+    
+                        <img src="movies/12.png" class="img-fluid w-24" alt="movies6">
+
+                        <img src="movies/13.png" class="img-fluid w-24" alt="movies6">
+
+                    </div>
+                </div>
+                                
+
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5-2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators5-2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+            </div>
+            <!-- carosello 1 sm -->
+            <div id="carouselExampleIndicators5-3" class="carousel d-sm-none slide p-4">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item customCarousel active">
+                    
+                    <img src="movies/13.png" class="img-fluid w-48" alt="movies1">
+
+                    <img src="movies/14.png" class="img-fluid w-48" alt="movies2">
+
+                    <img src="movies/15.png" class="img-fluid w-48" alt="movies3">
+
+                    </div>
+                    
+                    <div class="carousel-item customCarousel">
+                    
+                        <img src="movies/15.png" class="img-fluid w-48" alt="movies5">
+
+                        <img src="movies/16.png" class="img-fluid w-48" alt="movies6">
+    
+                        <img src="movies/17.png" class="img-fluid w-48" alt="movies6">
+
+                    </div>
+
+                    <div class="carousel-item customCarousel">
+                    
+                    <img src="movies/17.png" class="img-fluid w-48" alt="movies1">
+
+                    <img src="movies/18.png" class="img-fluid w-48" alt="movies2">
+
+                    <img src="movies/11.png" class="img-fluid w-48" alt="movies3">
+
+                    </div>
+                    
+                    <div class="carousel-item customCarousel">
+                    
+                        <img src="movies/11.png" class="img-fluid w-48" alt="movies5">
+
+                        <img src="movies/5.png" class="img-fluid w-48" alt="movies6">
+    
+                        <img src="movies/7.png" class="img-fluid w-48" alt="movies6">
+
+                    </div>
+
+                    <div class="carousel-item customCarousel">
+
+                        <img src="movies/7.png" class="img-fluid w-48" alt="movies6">
+    
+                        <img src="movies/2.png" class="img-fluid w-48" alt="movies6">
+
+                        <img src="movies/3.png" class="img-fluid w-48" alt="movies6">
+
+                    </div>
+                    <div class="carousel-item customCarousel">
+
+                        <img src="movies/7.png" class="img-fluid w-48" alt="movies6">
+    
+                        <img src="movies/12.png" class="img-fluid w-48" alt="movies6">
+
+                        <img src="movies/13.png" class="img-fluid w-48" alt="movies6">
+                    </div>
+                </div>
+                                
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5-3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators5-3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+            </div>
+
+        </div>
+
+        <!-- #6 -->
+        <div class="carosello">
+                    <!-- carosello 1 lg -->
+            <div id="carouselExampleIndicators6-1" class="carousel d-none d-lg-block slide p-4">
+
+                <p class="text-white fs-5">New Releases</p>
+
+                <div class="carousel-inner position-relative">
+                    <div class="carousel-item customCarousel active">
+
+                    <!-- <img src="movies/1.png" class="img-fluid w-16" alt="movies1"> -->
+                    
+                    <img src="movies/7.png" class="img-fluid w-16" alt="movies1">
+
+                    <img src="movies/8.png" class="img-fluid w-16" alt="movies2">
+
+                    <img src="movies/9.png" class="img-fluid w-16" alt="movies3">
+
+                    <img src="movies/10.png" class="img-fluid w-16" alt="movies4">
+
+                    <img src="movies/11.png" class="img-fluid w-16" alt="movies5">
+
+                    <img src="movies/12.png" class="img-fluid w-16" alt="movies6">
+
+                    <img src="movies/1.png" class="img-fluid w-16" alt="movies6">
+
+
+                    </div>
+
+                    <div class="carousel-item customCarousel">
+                    
+                        <img src="movies/1.png" class="img-fluid w-16" alt="movies6">
+
+                        <img src="movies/2.png" class="img-fluid w-16" alt="movies6">
+    
+                        <img src="movies/3.png" class="img-fluid w-16" alt="movies6">
+    
+                        <img src="movies/4.png" class="img-fluid w-16" alt="movies6">
+    
+                        <img src="movies/5.png" class="img-fluid w-16" alt="movies6">
+    
+                        <img src="movies/6.png" class="img-fluid w-16" alt="movies6">
+
+                        <img src="movies/7.png" class="img-fluid w-16" alt="movies6">
+
+                    </div>
+                </div>
+                                
+
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators6-1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators6-1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+            </div>
+            <!-- carosello 1 sm-lg -->
+            <div id="carouselExampleIndicators6-2" class="carousel d-none d-sm-block d-lg-none slide p-4">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item customCarousel active">
+                    
+                    <img src="movies/7.png" class="img-fluid w-24" alt="movies1">
+
+                    <img src="movies/8.png" class="img-fluid w-24" alt="movies2">
+
+                    <img src="movies/9.png" class="img-fluid w-24" alt="movies3">
+
+                    <img src="movies/10.png" class="img-fluid w-24" alt="movies4">
+
+                    <img src="movies/11.png" class="img-fluid w-24" alt="movies5">
+
+                    </div>
+                    
+                    <div class="carousel-item customCarousel">
+                    
+                        <img src="movies/11.png" class="img-fluid w-24" alt="movies5">
+
+                        <img src="movies/12.png" class="img-fluid w-24" alt="movies6">
+    
+                        <img src="movies/1.png" class="img-fluid w-24" alt="movies6">
+
+                        <img src="movies/2.png" class="img-fluid w-24" alt="movies6">
+    
+                        <img src="movies/3.png" class="img-fluid w-24" alt="movies6">
+                    
+
+                    </div>
+
+                    <div class="carousel-item customCarousel">
+
+                        <img src="movies/3.png" class="img-fluid w-24" alt="movies6">
+    
+                        <img src="movies/4.png" class="img-fluid w-24" alt="movies6">
+    
+                        <img src="movies/5.png" class="img-fluid w-24" alt="movies6">
+    
+                        <img src="movies/6.png" class="img-fluid w-24" alt="movies6">
+
+                        <img src="movies/7.png" class="img-fluid w-24" alt="movies6">
+
+                    </div>
+                </div>
+                                
+
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators6-2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators6-2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+            </div>
+            <!-- carosello 1 sm -->
+            <div id="carouselExampleIndicators6-3" class="carousel d-sm-none slide p-4">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item customCarousel active">
+                    
+                    <img src="movies/7.png" class="img-fluid w-48" alt="movies1">
+
+                    <img src="movies/8.png" class="img-fluid w-48" alt="movies2">
+
+                    <img src="movies/9.png" class="img-fluid w-48" alt="movies3">
+
+                    </div>
+                    
+                    <div class="carousel-item customCarousel">
+                    
+                        <img src="movies/9.png" class="img-fluid w-48" alt="movies5">
+
+                        <img src="movies/10.png" class="img-fluid w-48" alt="movies6">
+    
+                        <img src="movies/11.png" class="img-fluid w-48" alt="movies6">
+
+                    </div>
+
+                    <div class="carousel-item customCarousel">
+                    
+                    <img src="movies/11.png" class="img-fluid w-48" alt="movies1">
+
+                    <img src="movies/12.png" class="img-fluid w-48" alt="movies2">
+
+                    <img src="movies/1.png" class="img-fluid w-48" alt="movies3">
+
+                    </div>
+                    
+                    <div class="carousel-item customCarousel">
+                    
+                        <img src="movies/7.png" class="img-fluid w-48" alt="movies5">
+
+                        <img src="movies/8.png" class="img-fluid w-48" alt="movies6">
+    
+                        <img src="movies/9.png" class="img-fluid w-48" alt="movies6">
+
+                    </div>
+
+                    <div class="carousel-item customCarousel">
+
+                        <img src="movies/9.png" class="img-fluid w-48" alt="movies6">
+    
+                        <img src="movies/10.png" class="img-fluid w-48" alt="movies6">
+
+                        <img src="movies/11.png" class="img-fluid w-48" alt="movies6">
+
+                    </div>
+                    <div class="carousel-item customCarousel">
+
+                        <img src="movies/11.png" class="img-fluid w-48" alt="movies6">
+    
+                        <img src="movies/12.png" class="img-fluid w-48" alt="movies6">
+                    </div>
+                </div>
+                                
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators6-3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators6-3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+            </div>
+
+        </div>
         
      </section>
+
+     <!-- footer -->
+     <footer class="d-flex justify-content-center p-4 mb-5">
+
+        <section id="meta" class="w-75">
+            <!-- icone social -->
+            <div class="sopraFooter d-flex">
+                <a href="#">
+                    <i class="p-3 fa-brands fa-square-facebook" style="color: rgb(166, 164, 164);"></i>
+                </a>
+                <a href="#">
+                    <i class="p-3 fa-brands fa-square-instagram" style="color: rgb(166, 164, 164);;"></i>
+                </a>
+                <a href="#">
+                    <i class="p-3 fa-brands fa-twitter" style="color: rgb(166, 164, 164);"></i>
+                </a>
+                <a href="#">
+                    <i class="p-3 fa-brands fa-youtube" style="color: rgb(166, 164, 164);"></i>
+                </a>
+            </div>
+
+            <!-- collegamenti vari -->
+            <div class="contenutoFooter">
+                <a href="#">Audio and Subtitles</a>
+                <a href="#">Audio Description</a>
+                <a href="#">Help Center</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Media Center</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Jobs</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy</a>
+                <a href="#">Legal Notices</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <!-- tasto -->
+            <div class="tastoFooter p-3">
+                <button class="bg-dark">Service Code</button>
+            </div>
+
+            <!-- copyright -->
+            <div class="copyright p-2">
+                <p>© 1997-2019 Netflix, Inc.{i-132984rhfiei}</p>
+            </div>
+
+        </section>
+
+     </footer>
+
 </body>
 
 <script src="script.js"></script>
