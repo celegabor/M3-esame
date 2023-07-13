@@ -74,7 +74,7 @@
                         </button>
 
                         <!-- profile -->
-                        <div class="dropdown ">
+                        <div class="dropdown">
                             <button class="position-relative btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <img class="imgLogo scale-8 " src="movies/fotoboh.png" alt="">
                             </button>
@@ -123,10 +123,13 @@
 
             <!-- dx -->
             <div class="vista text-white text-sm-center d-flex mx-5">
-                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
+                <i id="vistaCaroselli" onclick="vistaCaroselli()" class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                <div id="vistaGrid" onclick="vistaGrid()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
                     <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
                   </svg>
+
+                </div>
             </div>
         </div>
     </section>
@@ -143,8 +146,6 @@
 
                 <div class="carousel-inner position-relative">
                     <div class="carousel-item customCarousel active">
-
-                    <!-- <img src="movies/1.png" class="img-fluid w-16" alt="movies1"> -->
                     
                     <img src="movies/1.png" class="img-fluid w-16" alt="movies1">
 
@@ -196,6 +197,9 @@
             </div>
             <!-- carosello 1 sm-lg -->
             <div id="carouselExampleIndicators1-2" class="carousel d-none d-sm-block d-lg-none slide p-4">
+
+                <p class="text-white fs-5">Trending Now</p>
+
 
                 <div class="carousel-inner">
                     <div class="carousel-item customCarousel active">
@@ -256,6 +260,9 @@
             </div>
             <!-- carosello 1 sm -->
             <div id="carouselExampleIndicators1-3" class="carousel d-sm-none slide p-4">
+
+                <p class="text-white fs-5">Trending Now</p>
+
 
                 <div class="carousel-inner">
                     <div class="carousel-item customCarousel active">
@@ -393,6 +400,9 @@
             <!-- carosello 1 sm-lg -->
             <div id="carouselExampleIndicators2-2" class="carousel d-none d-sm-block d-lg-none slide p-4">
 
+                <p class="text-white fs-5">Watch It Again</p>
+
+
                 <div class="carousel-inner">
                     <div class="carousel-item customCarousel active">
                     
@@ -452,6 +462,9 @@
             </div>
             <!-- carosello 1 sm -->
             <div id="carouselExampleIndicators2-3" class="carousel d-sm-none slide p-4">
+
+                <p class="text-white fs-5">Watch It Again</p>
+
 
                 <div class="carousel-inner">
                     <div class="carousel-item customCarousel active">
@@ -590,6 +603,9 @@
             <!-- carosello 1 sm-lg -->
             <div id="carouselExampleIndicators3-2" class="carousel d-none d-sm-block d-lg-none slide p-4">
 
+                <p class="text-white fs-5">New Releases</p>
+
+
                 <div class="carousel-inner">
                     <div class="carousel-item customCarousel active">
                     
@@ -649,6 +665,9 @@
             </div>
             <!-- carosello 1 sm -->
             <div id="carouselExampleIndicators3-3" class="carousel d-sm-none slide p-4">
+
+                <p class="text-white fs-5">New Releases</p>
+
 
                 <div class="carousel-inner">
                     <div class="carousel-item customCarousel active">
@@ -784,6 +803,9 @@
             <!-- carosello 1 sm-lg -->
             <div id="carouselExampleIndicators4-2" class="carousel d-none d-sm-block d-lg-none slide p-4">
 
+                <p class="text-white fs-5">Trending Now</p>
+
+
                 <div class="carousel-inner">
                     <div class="carousel-item customCarousel active">
                     
@@ -843,6 +865,9 @@
             </div>
             <!-- carosello 1 sm -->
             <div id="carouselExampleIndicators4-3" class="carousel d-sm-none slide p-4">
+
+                <p class="text-white fs-5">Trending Now</p>
+
 
                 <div class="carousel-inner">
                     <div class="carousel-item customCarousel active">
@@ -981,6 +1006,9 @@
             <!-- carosello 1 sm-lg -->
             <div id="carouselExampleIndicators5-2" class="carousel d-none d-sm-block d-lg-none slide p-4">
 
+                <p class="text-white fs-5">Watch It Again</p>
+
+
                 <div class="carousel-inner">
                     <div class="carousel-item customCarousel active">
                     
@@ -1040,6 +1068,9 @@
             </div>
             <!-- carosello 1 sm -->
             <div id="carouselExampleIndicators5-3" class="carousel d-sm-none slide p-4">
+
+                <p class="text-white fs-5">Watch It Again</p>
+
 
                 <div class="carousel-inner">
                     <div class="carousel-item customCarousel active">
@@ -1178,6 +1209,9 @@
             <!-- carosello 1 sm-lg -->
             <div id="carouselExampleIndicators6-2" class="carousel d-none d-sm-block d-lg-none slide p-4">
 
+                <p class="text-white fs-5">New Releases</p>
+
+
                 <div class="carousel-inner">
                     <div class="carousel-item customCarousel active">
                     
@@ -1237,6 +1271,9 @@
             </div>
             <!-- carosello 1 sm -->
             <div id="carouselExampleIndicators6-3" class="carousel d-sm-none slide p-4">
+
+                <p class="text-white fs-5">New Releases</p>
+
 
                 <div class="carousel-inner">
                     <div class="carousel-item customCarousel active">
@@ -1311,6 +1348,224 @@
         </div>
         
      </section>
+
+    <!-- caroselli 2 -->
+    <section id="grid" class="mb-5 p-4 d-none">
+
+        <hr>
+
+        <!-- #1 -->
+        <div class="carosello2">
+
+            <p class="text-white fs-5">
+                Trending Now222
+            </p>
+
+            <div>
+                <img src="movies/11.png" class="img-fluid w-16" alt="movies1">
+
+                <img src="movies/12.png" class="img-fluid w-16" alt="movies2">
+
+                <img src="movies/13.png" class="img-fluid w-16" alt="movies3">
+
+                <img src="movies/14.png" class="img-fluid w-16" alt="movies4">
+
+                <img src="movies/15.png" class="img-fluid w-16" alt="movies5">
+
+                <img src="movies/16.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/7.png" class="img-fluid w-16" alt="movies6">
+                    
+                <img src="movies/7.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/8.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/9.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/10.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/11.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/12.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/1.png" class="img-fluid w-16" alt="movies6">
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- #2 -->
+        <div class="carosello2">
+                
+            <p class="text-white fs-5">
+                Watch It Again
+            </p>
+
+            <div>
+
+                <img src="movies/13.png" class="img-fluid w-16" alt="movies1">
+
+                <img src="movies/14.png" class="img-fluid w-16" alt="movies2">
+
+                <img src="movies/15.png" class="img-fluid w-16" alt="movies3">
+
+                <img src="movies/16.png" class="img-fluid w-16" alt="movies4">
+
+                <img src="movies/17.png" class="img-fluid w-16" alt="movies5">
+
+                <img src="movies/18.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/11.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/11.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/5.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/7.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/2.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/3.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/12.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/13.png" class="img-fluid w-16" alt="movies6">
+                
+            </div>
+            
+
+        </div>
+
+        <hr>
+
+        <!-- #3 -->
+        <div class="carosello2">
+
+            <p class="text-white fs-5">
+                New Releases
+            </p> 
+
+            <div>
+
+                <img src="movies/7.png" class="img-fluid w-16" alt="movies1">
+
+                <img src="movies/8.png" class="img-fluid w-16" alt="movies2">
+
+                <img src="movies/9.png" class="img-fluid w-16" alt="movies3">
+
+                <img src="movies/10.png" class="img-fluid w-16" alt="movies4">
+
+                <img src="movies/11.png" class="img-fluid w-16" alt="movies5">
+
+                <img src="movies/12.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/1.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/1.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/2.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/3.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/4.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/5.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/6.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/7.png" class="img-fluid w-16" alt="movies6">
+                
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- #4 -->
+        <div class="carosello2">
+
+            <p class="text-white fs-5">Trending Now</p>
+
+            <div>
+                <img src="movies/1.png" class="img-fluid w-16" alt="movies1">
+
+                <img src="movies/2.png" class="img-fluid w-16" alt="movies2">
+
+                <img src="movies/3.png" class="img-fluid w-16" alt="movies3">
+
+                <img src="movies/4.png" class="img-fluid w-16" alt="movies4">
+
+                <img src="movies/5.png" class="img-fluid w-16" alt="movies5">
+
+                <img src="movies/6.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/7.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/7.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/8.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/9.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/10.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/11.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/12.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/1.png" class="img-fluid w-16" alt="movies6">
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- #5 -->
+        <div class="carosello2">
+
+            <p class="text-white fs-5">Watch It Again</p>
+
+            <div>
+                
+                <img src="movies/13.png" class="img-fluid w-16" alt="movies1">
+
+                <img src="movies/14.png" class="img-fluid w-16" alt="movies2">
+
+                <img src="movies/15.png" class="img-fluid w-16" alt="movies3">
+
+                <img src="movies/16.png" class="img-fluid w-16" alt="movies4">
+
+                <img src="movies/17.png" class="img-fluid w-16" alt="movies5">
+
+                <img src="movies/18.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/11.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/11.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/5.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/7.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/2.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/3.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/12.png" class="img-fluid w-16" alt="movies6">
+
+                <img src="movies/13.png" class="img-fluid w-16" alt="movies6">
+
+            </div>
+
+        </div>
+
+        <hr>
+
+    </section>
+    
 
      <!-- footer -->
      <footer class="d-flex justify-content-center p-4 mb-5">

@@ -17,11 +17,11 @@ font-family: 'Roboto', sans-serif;
     scale: 0.8;
 }
 
-.scaleCarosello{
-    scale: 1.05;
-    transition: all 0.3s linear;
-    filter: drop-shadow(2px 0 6px gray);
+hr{
+    height: 2px;
+    border: 1px solid black !important;
 }
+
 
 /* sezione NAV */
 
@@ -50,6 +50,7 @@ nav > div > div > ul{
 .positionNav{
     position: sticky;
     top: 0;
+    z-index: 11;
 }
 
 .positionNav nav{
@@ -63,7 +64,6 @@ nav > div > div > ul{
     transition: all 0.2s linear;
     border-radius: 10px;
 }
-
 
 /* sezione viste */
 
@@ -99,6 +99,7 @@ nav > div > div > ul{
     height: 30px;
     width: 35px;
     padding: 6px;
+    z-index: 1;
 }
 
 /* sezione caroselli */
@@ -107,6 +108,18 @@ nav > div > div > ul{
     width: 100vw;
     overflow: hidden;
     white-space: nowrap;
+}
+
+.scaleCaroselli{
+    scale: 1.2;
+    margin-right: 3.5px;
+    margin-left: 3px;
+}
+
+.scaleCarosello{
+    scale: 1.05;
+    transition: all 0.3s linear;
+    filter: drop-shadow(2px 0 6px gray);
 }
 
 .w-16{
@@ -132,7 +145,18 @@ nav > div > div > ul{
 
 .carousel-control-next{
     margin-right: -6% !important;
+}
 
+.carosello2 div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carosello2 img{
+    flex-basis: 20%;
+    padding: 0.8em;
+    width: 15%;
+    object-fit: cover;
 }
 
 
@@ -173,6 +197,10 @@ nav > div > div > ul{
         font-size: 0.6em;
         padding: 7px;
     }
+
+    .carosello2 img{
+        flex-basis: 25%;
+    }
 }
 
 @media  screen and (max-width: 500px) {
@@ -181,10 +209,13 @@ nav > div > div > ul{
         font-size: 0.7em;
         padding: 8px;
     }
-
     
     .show{
        scale: 0.7;
+    }
+
+    .carosello2 img{
+        flex-basis: 50%;
     }
 }
 

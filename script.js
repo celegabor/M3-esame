@@ -1,3 +1,11 @@
+
+window.addEventListener('load', function() {
+    alert('Ciao! In questa copia non ho collegato nessun link/tasto. Ho invece aggiunto la particolarità di poter scegliere come visualizzare le immagini dei film (carosello o griglia)');
+  });
+  
+
+// sezione carosello in mezzo alla pag
+
 window.addEventListener('scroll', function(){
     // definisco carosello
     let caroselli = document.getElementsByClassName('carosello')
@@ -46,6 +54,9 @@ window.addEventListener('scroll', function(){
   }
 )
 
+
+// sezione barra di ricerca
+
 function search() {
     let searchWidth = document.querySelector('#searchBar')
     let buttonSearch = document.querySelector('#searchButton')
@@ -67,4 +78,57 @@ function body(){
     buttonSearch.classList.add('end-0')
     buttonSearch.classList.remove('searchActive')
 
-}  
+}
+
+
+
+// sezione caroselli
+
+let caroselli = document.querySelector('#caroselli')
+let grid = document.querySelector('#grid')
+
+let tastoCaroselli = document.querySelector('#vistaCaroselli')
+let tastoGrid = document.querySelector('#vistaGrid')
+
+tastoCaroselli.classList.add('scaleCaroselli')
+
+function vistaCaroselli(){
+
+    if (caroselli.classList.contains('d-none')){
+
+        caroselli.classList.remove('d-none')
+        grid.classList.add('d-none')
+
+        tastoCaroselli.classList.add('scaleCaroselli')
+        tastoGrid.classList.remove('scaleCaroselli')
+
+    } else {
+
+        caroselli.classList.add('d-none')
+        grid.classList.remove('d-none')
+
+        tastoCaroselli.classList.remove('scaleCaroselli')
+        tastoGrid.classList.add('scaleCaroselli')
+
+    }
+}
+function vistaGrid(){
+
+    if (grid.classList.contains('d-none')){
+
+        grid.classList.remove('d-none')
+        caroselli.classList.add('d-none')
+
+        tastoGrid.classList.add('scaleCaroselli')
+        tastoCaroselli.classList.remove('scaleCaroselli')
+
+    } else {
+
+        grid.classList.add('d-none')
+        caroselli.classList.remove('d-none')
+
+        tastoGrid.classList.remove('scaleCaroselli')
+        tastoCaroselli.classList.add('scaleCaroselli')
+
+    }
+}
