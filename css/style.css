@@ -133,6 +133,7 @@ hr{
     border-bottom: 1px solid lightgray !important;
     border-top: none !important;
     border-right: none !important;
+    transform: translate(0px, 32px) !important;
 }
 
 .generi:hover{
@@ -177,7 +178,6 @@ hr{
 
 .scaleCarosello{
     scale: 1.05;
-    height: ;
     transition: all 0.3s linear;
     filter: drop-shadow(2px 0 6px gray);
 }
@@ -203,8 +203,10 @@ hr{
 }
 
 #caroselli img:hover{
-    scale: 1.1;
     transition: all 0.2s linear;
+    z-index: 1;
+    filter: drop-shadow(1px 1px 5px red);
+    padding: 0 5px;
 }
 
 .carousel-control-prev{
@@ -322,7 +324,11 @@ hr{
     }
 }
 
+@media  screen and (max-width: 368px) {
 
+    #ulGenres{
+        transform: translate(120px, 30px) !important;
 
-
+    }
+}
   
