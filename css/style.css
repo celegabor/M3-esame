@@ -3,18 +3,21 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Dancing Script', cursive;
-font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 #body{
     background-color: rgb(33, 37, 42);
     width: 100vw;
     overflow-x: hidden;
-
 }
 
 .scale-8{
     scale: 0.8;
+}
+
+.border-none{
+    border: none !important;
 }
 
 hr{
@@ -28,7 +31,6 @@ hr{
 
 .customSearch{
     width: 32px !important;
-    animation: search, 0.2s, ease, 0s, 1, alternate !important;
 }
 
 .searchActive{
@@ -61,6 +63,36 @@ hr{
 .positionNav nav{
     margin-right: 2rem;
 }
+
+.fa-bell{
+    color: white;
+}
+
+.p-15px{
+    padding: 15px;
+}
+
+#searchButton{
+    color: white;
+    transition: all 0.2s linear;
+}
+
+#searchButton:hover{
+    border-radius: 12px;
+    padding: 10px !important;
+    border-bottom: 1px solid red !important;
+    background-color: #000000 !important;
+}
+
+.kids{
+    padding: 15px !important;
+}
+
+.fa-bell:hover{
+    color: #000000;
+    background-color: #000000;
+    padding: 15px ;
+}
   
 .overButton:hover{
     background-color: #000000 !important;
@@ -68,6 +100,7 @@ hr{
     scale: 1.1 !important;
     transition: all 0.2s linear;
     border-radius: 10px;
+    border-bottom: 1px solid red !important;
 }
 
 .overButtonNavsx:hover{
@@ -76,6 +109,7 @@ hr{
     scale: 1.1 !important;
     transition: all 0.2s linear;
     border-radius: 10px;
+    border-bottom: 2px solid red !important;
 }
 
 /* sezione viste */
@@ -90,9 +124,21 @@ hr{
     font-size: 2.2em;
 }
 
-.generi:hover{
-    background-color: rgb(49, 48, 48) !important;
+.generi{
     color: white !important;
+}
+
+#ulGenres{
+    border-left: 1px solid lightgray !important;
+    border-bottom: 1px solid lightgray !important;
+    border-top: none !important;
+    border-right: none !important;
+}
+
+.generi:hover{
+    background-color: rgb(0, 0, 0) !important;
+    border-left: 6px solid red;
+    border-radius: 5px;
 }
 
 .bg-custom-black{
@@ -131,6 +177,7 @@ hr{
 
 .scaleCarosello{
     scale: 1.05;
+    height: ;
     transition: all 0.3s linear;
     filter: drop-shadow(2px 0 6px gray);
 }
@@ -145,6 +192,14 @@ hr{
 
 .w-48{
     width: 48%;
+}
+
+.op-7{
+    opacity: 0.4;
+}
+
+.op-6{
+    opacity: 0.6;
 }
 
 #caroselli img:hover{
@@ -203,7 +258,9 @@ hr{
     color: rgb(166, 164, 164);
     font-size: 0.9em;
 }
+
 @media  screen and (max-width: 991px) {
+
     #listaPagCollegate{
         width: 22%;
         margin-left: 40px;
@@ -213,8 +270,6 @@ hr{
         border-left: 6px solid red;
     }
 }
-
-
 
 @media  screen and (max-width: 800px) {
 
@@ -235,10 +290,10 @@ hr{
     #nav{
         width: 100% !important;
     }
-
 }
 
 @media screen and (max-width: 650px) {
+
     #dx {
         flex-direction: column-reverse;
         position: relative;
@@ -249,10 +304,7 @@ hr{
         right: 0;
         top: 61px;
     }
-
-   
 }
-
 
 @media  screen and (max-width: 500px) {
 

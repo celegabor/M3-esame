@@ -1,6 +1,7 @@
 
 window.addEventListener('load', function() {
     alert('Ciao! In questa copia non ho collegato nessun link/tasto. Ho invece aggiunto la particolarità di poter scegliere come visualizzare le immagini dei film (carosello o griglia)');
+
   });
   
 
@@ -13,6 +14,7 @@ window.addEventListener('scroll', function(){
     let altezza = window.innerHeight
     // definisco la posizione esatta metà schermo
 
+    let opacity = document.getElementsByClassName('op-6')
 
     // regolo la metà dello schermo in base alle 3 risoluzioni per correggere il priblema che la prima riga se tengo il 50% preciso non entra ciclo sotto
     let altezza2 = 0;
@@ -42,10 +44,13 @@ window.addEventListener('scroll', function(){
         if (posizione >= cPosizione && posizione <= cAltezza + cPosizione){
 
             carosello.classList.add('scaleCarosello');
+            carosello.classList.remove('op-6')
 
         } else {
 
         carosello.classList.remove('scaleCarosello');
+        carosello.classList.add('op-6')
+
 
         }
         
@@ -63,6 +68,7 @@ function search() {
 
 
     searchWidth.classList.toggle('customSearch')
+    searchWidth.classList.toggle('border-none')
     buttonSearch.classList.toggle('end-0')
     buttonSearch.classList.toggle('searchActive')
 }
@@ -82,7 +88,7 @@ function body(){
 
 
 
-// sezione caroselli
+// sezione visione versioni caroselli
 
 let caroselli = document.querySelector('#caroselli')
 let grid = document.querySelector('#grid')
