@@ -58,21 +58,21 @@
                         <div id="sectionSearch" class="navbar d-block d-sm-flex">
                             <div class="container">
                             <form class="d-flex align-items-center position-relative" role="search">
-                                <input id="searchBar" class=" d-block d-sm-flex bg-dark form-control customSearch overflow-hidden" type="search" placeholder="    Search" aria-label="   Search">
-                                <i id="searchButton" onclick="search()" class="tastoSearch position-absolute end-0 p-2 fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                                <input id="searchBar" class="border-none d-block d-sm-flex bg-dark form-control customSearch overflow-hidden" type="search" placeholder=" Search " aria-label="   Search">
+                                <i id="searchButton" onclick="search()" class="tastoSearch position-absolute end-0 p-2 fa-solid fa-magnifying-glass" ></i>
                             </form>
                             </div>
                         </div>
 
                         <div id="iconsNav" class="d-flex">
                             <!-- kids -->
-                            <button class="btn overButton" type="submit">
+                            <button class="kids btn overButton" type="submit">
                                 KIDS
                             </button>
 
                             <!-- bell -->
                             <button class="btn " type="submit">
-                                <i class="overButton fa-solid fa-bell" style="color: #ffffff;"></i>
+                                <i class="p-15px overButton fa-solid fa-bell"></i>
                             </button>
 
                             <!-- profile -->
@@ -117,7 +117,7 @@
                     <button class="btn dropdown-toggle bg-custom-black text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Genres
                     </button>
-                    <ul class="dropdown-menu bg-secondary text-center">
+                    <ul id="ulGenres" class="dropdown-menu bg-dark text-center">
                       <li><a class="generi dropdown-item" href="#">Action</a></li>
                       <li><a class="generi dropdown-item" href="#">Funny</a></li>
                       <li><a class="generi dropdown-item" href="#">Horror</a></li>
@@ -142,7 +142,7 @@
      <section id="caroselli" class="mb-5 p-4">
 
         <!-- #1 -->
-        <div class="carosello">
+        <div class="carosello scaleCarosello">
                     <!-- carosello 1 lg -->
             <div id="carouselExampleIndicators1-1" class="carousel d-none d-lg-block slide p-4">
 
@@ -163,7 +163,7 @@
 
                     <img src="movies/6.png" class="img-fluid w-16" alt="movies6">
 
-                    <img src="movies/7.png" class="img-fluid w-16" alt="movies6">
+                    <img src="movies/7.png" class="op-7 img-fluid w-16" alt="movies6">
 
 
                     </div>
@@ -182,7 +182,7 @@
     
                         <img src="movies/12.png" class="img-fluid w-16" alt="movies6">
 
-                        <img src="movies/1.png" class="img-fluid w-16" alt="movies6">
+                        <img src="movies/1.png" class="op-7 img-fluid w-16" alt="movies6">
 
                     </div>
                 </div>
@@ -216,7 +216,7 @@
 
                     <img src="movies/4.png" class="img-fluid w-24" alt="movies4">
 
-                    <img src="movies/5.png" class="img-fluid w-24" alt="movies5">
+                    <img src="movies/5.png" class="op-7 img-fluid w-24" alt="movies5">
 
                     </div>
                     
@@ -230,7 +230,7 @@
 
                         <img src="movies/8.png" class="img-fluid w-24" alt="movies6">
     
-                        <img src="movies/9.png" class="img-fluid w-24" alt="movies6">
+                        <img src="movies/9.png" class="op-7 img-fluid w-24" alt="movies6">
                     
 
                     </div>
@@ -245,7 +245,7 @@
     
                         <img src="movies/12.png" class="img-fluid w-24" alt="movies6">
 
-                        <img src="movies/1.png" class="img-fluid w-24" alt="movies6">
+                        <img src="movies/1.png" class="op-7 img-fluid w-24" alt="movies6">
 
                     </div>
                 </div>
@@ -275,7 +275,7 @@
 
                     <img src="movies/2.png" class="img-fluid w-48" alt="movies2">
 
-                    <img src="movies/3.png" class="img-fluid w-48" alt="movies3">
+                    <img src="movies/3.png" class="op-7 img-fluid w-48" alt="movies3">
 
                     </div>
                     
@@ -285,7 +285,7 @@
 
                         <img src="movies/4.png" class="img-fluid w-48" alt="movies6">
     
-                        <img src="movies/5.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/5.png" class="op-7 img-fluid w-48" alt="movies6">
 
                     </div>
 
@@ -295,7 +295,7 @@
 
                     <img src="movies/6.png" class="img-fluid w-48" alt="movies2">
 
-                    <img src="movies/7.png" class="img-fluid w-48" alt="movies3">
+                    <img src="movies/7.png" class="op-7 img-fluid w-48" alt="movies3">
 
                     </div>
                     
@@ -305,7 +305,7 @@
 
                         <img src="movies/8.png" class="img-fluid w-48" alt="movies6">
     
-                        <img src="movies/9.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/9.png" class="op-7 img-fluid w-48" alt="movies6">
 
                     </div>
 
@@ -315,7 +315,7 @@
     
                         <img src="movies/10.png" class="img-fluid w-48" alt="movies6">
 
-                        <img src="movies/11.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/11.png" class="op-7 img-fluid w-48" alt="movies6">
 
                     </div>
                     <div class="carousel-item customCarousel">
@@ -324,7 +324,7 @@
     
                         <img src="movies/12.png" class="img-fluid w-48" alt="movies6">
 
-                        <img src="movies/1.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/1.png" class="op-7 img-fluid w-48" alt="movies6">
                     </div>
                 </div>
                                 
@@ -343,7 +343,7 @@
         </div>
 
         <!-- #2 -->
-        <div class="carosello">
+        <div class="carosello op-6 ">
                     <!-- carosello 1 lg -->
             <div id="carouselExampleIndicators2-1" class="carousel d-none d-lg-block slide p-4">
 
@@ -365,7 +365,7 @@
 
                     <img src="movies/18.png" class="img-fluid w-16" alt="movies6">
 
-                    <img src="movies/11.png" class="img-fluid w-16" alt="movies6">
+                    <img src="movies/11.png" class="op-7 img-fluid w-16" alt="movies6">
 
 
                     </div>
@@ -384,7 +384,7 @@
     
                         <img src="movies/12.png" class="img-fluid w-16" alt="movies6">
 
-                        <img src="movies/13.png" class="img-fluid w-16" alt="movies6">
+                        <img src="movies/13.png" class="op-7 img-fluid w-16" alt="movies6">
 
                     </div>
                 </div>
@@ -418,7 +418,7 @@
 
                     <img src="movies/16.png" class="img-fluid w-24" alt="movies4">
 
-                    <img src="movies/17.png" class="img-fluid w-24" alt="movies5">
+                    <img src="movies/17.png" class="op-7 img-fluid w-24" alt="movies5">
 
                     </div>
                     
@@ -432,7 +432,7 @@
 
                         <img src="movies/5.png" class="img-fluid w-24" alt="movies6">
     
-                        <img src="movies/7.png" class="img-fluid w-24" alt="movies6">
+                        <img src="movies/7.png" class="op-7 img-fluid w-24" alt="movies6">
                     
 
                     </div>
@@ -447,7 +447,7 @@
     
                         <img src="movies/12.png" class="img-fluid w-24" alt="movies6">
 
-                        <img src="movies/13.png" class="img-fluid w-24" alt="movies6">
+                        <img src="movies/13.png" class="op-7 img-fluid w-24" alt="movies6">
 
                     </div>
                 </div>
@@ -477,7 +477,7 @@
 
                     <img src="movies/14.png" class="img-fluid w-48" alt="movies2">
 
-                    <img src="movies/15.png" class="img-fluid w-48" alt="movies3">
+                    <img src="movies/15.png" class="op-7 img-fluid w-48" alt="movies3">
 
                     </div>
                     
@@ -487,7 +487,7 @@
 
                         <img src="movies/16.png" class="img-fluid w-48" alt="movies6">
     
-                        <img src="movies/17.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/17.png" class="op-7 img-fluid w-48" alt="movies6">
 
                     </div>
 
@@ -497,7 +497,7 @@
 
                     <img src="movies/18.png" class="img-fluid w-48" alt="movies2">
 
-                    <img src="movies/11.png" class="img-fluid w-48" alt="movies3">
+                    <img src="movies/11.png" class="op-7 img-fluid w-48" alt="movies3">
 
                     </div>
                     
@@ -507,7 +507,7 @@
 
                         <img src="movies/5.png" class="img-fluid w-48" alt="movies6">
     
-                        <img src="movies/7.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/7.png" class="op-7 img-fluid w-48" alt="movies6">
 
                     </div>
 
@@ -517,7 +517,7 @@
     
                         <img src="movies/2.png" class="img-fluid w-48" alt="movies6">
 
-                        <img src="movies/3.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/3.png" class="op-7 img-fluid w-48" alt="movies6">
 
                     </div>
                     <div class="carousel-item customCarousel">
@@ -526,7 +526,7 @@
     
                         <img src="movies/12.png" class="img-fluid w-48" alt="movies6">
 
-                        <img src="movies/13.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/13.png" class="op-7 img-fluid w-48" alt="movies6">
                     </div>
                 </div>
                                 
@@ -545,7 +545,7 @@
         </div>
 
         <!-- #3 -->
-        <div class="carosello">
+        <div class="carosello op-6 ">
                     <!-- carosello 1 lg -->
             <div id="carouselExampleIndicators3-1" class="carousel d-none d-lg-block slide p-4">
 
@@ -568,7 +568,7 @@
 
                     <img src="movies/12.png" class="img-fluid w-16" alt="movies6">
 
-                    <img src="movies/1.png" class="img-fluid w-16" alt="movies6">
+                    <img src="movies/1.png" class="op-7 img-fluid w-16" alt="movies6">
 
 
                     </div>
@@ -587,7 +587,7 @@
     
                         <img src="movies/6.png" class="img-fluid w-16" alt="movies6">
 
-                        <img src="movies/7.png" class="img-fluid w-16" alt="movies6">
+                        <img src="movies/7.png" class="op-7 img-fluid w-16" alt="movies6">
 
                     </div>
                 </div>
@@ -621,7 +621,7 @@
 
                     <img src="movies/10.png" class="img-fluid w-24" alt="movies4">
 
-                    <img src="movies/11.png" class="img-fluid w-24" alt="movies5">
+                    <img src="movies/11.png" class="op-7 img-fluid w-24" alt="movies5">
 
                     </div>
                     
@@ -635,7 +635,7 @@
 
                         <img src="movies/2.png" class="img-fluid w-24" alt="movies6">
     
-                        <img src="movies/3.png" class="img-fluid w-24" alt="movies6">
+                        <img src="movies/3.png" class="op-7 img-fluid w-24" alt="movies6">
                     
 
                     </div>
@@ -650,7 +650,7 @@
     
                         <img src="movies/6.png" class="img-fluid w-24" alt="movies6">
 
-                        <img src="movies/7.png" class="img-fluid w-24" alt="movies6">
+                        <img src="movies/7.png" class="op-7 img-fluid w-24" alt="movies6">
 
                     </div>
                 </div>
@@ -680,7 +680,7 @@
 
                     <img src="movies/8.png" class="img-fluid w-48" alt="movies2">
 
-                    <img src="movies/9.png" class="img-fluid w-48" alt="movies3">
+                    <img src="movies/9.png" class="op-7 img-fluid w-48" alt="movies3">
 
                     </div>
                     
@@ -690,7 +690,7 @@
 
                         <img src="movies/10.png" class="img-fluid w-48" alt="movies6">
     
-                        <img src="movies/11.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/11.png" class="op-7 img-fluid w-48" alt="movies6">
 
                     </div>
 
@@ -700,7 +700,7 @@
 
                     <img src="movies/12.png" class="img-fluid w-48" alt="movies2">
 
-                    <img src="movies/1.png" class="img-fluid w-48" alt="movies3">
+                    <img src="movies/1.png" class="op-7 img-fluid w-48" alt="movies3">
 
                     </div>
                     
@@ -710,7 +710,7 @@
 
                         <img src="movies/8.png" class="img-fluid w-48" alt="movies6">
     
-                        <img src="movies/9.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/9.png" class="op-7 img-fluid w-48" alt="movies6">
 
                     </div>
 
@@ -720,7 +720,7 @@
     
                         <img src="movies/10.png" class="img-fluid w-48" alt="movies6">
 
-                        <img src="movies/11.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/11.png" class="op-7 img-fluid w-48" alt="movies6">
 
                     </div>
                     <div class="carousel-item customCarousel">
@@ -728,6 +728,8 @@
                         <img src="movies/11.png" class="img-fluid w-48" alt="movies6">
     
                         <img src="movies/12.png" class="img-fluid w-48" alt="movies6">
+
+                        <img src="movies/7.png" class="op-7 img-fluid w-48" alt="movies6">
                     </div>
                 </div>
                                 
@@ -745,7 +747,7 @@
 
         </div>
         <!-- #4 -->
-        <div class="carosello">
+        <div class="carosello op-6 ">
                     <!-- carosello 1 lg -->
             <div id="carouselExampleIndicators4-1" class="carousel d-none d-lg-block slide p-4">
 
@@ -754,8 +756,6 @@
                 <div class="carousel-inner position-relative">
                     <div class="carousel-item customCarousel active">
 
-                    <!-- <img src="movies/1.png" class="img-fluid w-16" alt="movies1"> -->
-                    
                     <img src="movies/1.png" class="img-fluid w-16" alt="movies1">
 
                     <img src="movies/2.png" class="img-fluid w-16" alt="movies2">
@@ -768,7 +768,7 @@
 
                     <img src="movies/6.png" class="img-fluid w-16" alt="movies6">
 
-                    <img src="movies/7.png" class="img-fluid w-16" alt="movies6">
+                    <img src="movies/7.png" class="op-7 img-fluid w-16" alt="movies6">
 
 
                     </div>
@@ -787,7 +787,7 @@
     
                         <img src="movies/12.png" class="img-fluid w-16" alt="movies6">
 
-                        <img src="movies/1.png" class="img-fluid w-16" alt="movies6">
+                        <img src="movies/1.png" class="op-7 img-fluid w-16" alt="movies6">
 
                     </div>
                 </div>
@@ -821,7 +821,7 @@
 
                     <img src="movies/4.png" class="img-fluid w-24" alt="movies4">
 
-                    <img src="movies/5.png" class="img-fluid w-24" alt="movies5">
+                    <img src="movies/5.png" class="op-7 img-fluid w-24" alt="movies5">
 
                     </div>
                     
@@ -835,7 +835,7 @@
 
                         <img src="movies/8.png" class="img-fluid w-24" alt="movies6">
     
-                        <img src="movies/9.png" class="img-fluid w-24" alt="movies6">
+                        <img src="movies/9.png" class="op-7 img-fluid w-24" alt="movies6">
                     
 
                     </div>
@@ -850,7 +850,7 @@
     
                         <img src="movies/12.png" class="img-fluid w-24" alt="movies6">
 
-                        <img src="movies/1.png" class="img-fluid w-24" alt="movies6">
+                        <img src="movies/1.png" class="op-7 img-fluid w-24" alt="movies6">
 
                     </div>
                 </div>
@@ -880,7 +880,7 @@
 
                     <img src="movies/2.png" class="img-fluid w-48" alt="movies2">
 
-                    <img src="movies/3.png" class="img-fluid w-48" alt="movies3">
+                    <img src="movies/3.png" class="op-7 img-fluid w-48" alt="movies3">
 
                     </div>
                     
@@ -890,7 +890,7 @@
 
                         <img src="movies/4.png" class="img-fluid w-48" alt="movies6">
     
-                        <img src="movies/5.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/5.png" class="op-7 img-fluid w-48" alt="movies6">
 
                     </div>
 
@@ -900,7 +900,7 @@
 
                     <img src="movies/6.png" class="img-fluid w-48" alt="movies2">
 
-                    <img src="movies/7.png" class="img-fluid w-48" alt="movies3">
+                    <img src="movies/7.png" class="op-7 img-fluid w-48" alt="movies3">
 
                     </div>
                     
@@ -910,7 +910,7 @@
 
                         <img src="movies/8.png" class="img-fluid w-48" alt="movies6">
     
-                        <img src="movies/9.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/9.png" class="op-7 img-fluid w-48" alt="movies6">
 
                     </div>
 
@@ -920,7 +920,7 @@
     
                         <img src="movies/10.png" class="img-fluid w-48" alt="movies6">
 
-                        <img src="movies/11.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/11.png" class="op-7 img-fluid w-48" alt="movies6">
 
                     </div>
                     <div class="carousel-item customCarousel">
@@ -929,7 +929,7 @@
     
                         <img src="movies/12.png" class="img-fluid w-48" alt="movies6">
 
-                        <img src="movies/1.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/1.png" class="op-7 img-fluid w-48" alt="movies6">
                     </div>
                 </div>
                                 
@@ -948,7 +948,7 @@
         </div>
 
         <!-- #5 -->
-        <div class="carosello">
+        <div class="carosello op-6 ">
                     <!-- carosello 1 lg -->
             <div id="carouselExampleIndicators5-1" class="carousel d-none d-lg-block slide p-4">
 
@@ -956,8 +956,6 @@
 
                 <div class="carousel-inner position-relative">
                     <div class="carousel-item customCarousel active">
-
-                    <!-- <img src="movies/1.png" class="img-fluid w-16" alt="movies1"> -->
                     
                     <img src="movies/13.png" class="img-fluid w-16" alt="movies1">
 
@@ -971,7 +969,7 @@
 
                     <img src="movies/18.png" class="img-fluid w-16" alt="movies6">
 
-                    <img src="movies/11.png" class="img-fluid w-16" alt="movies6">
+                    <img src="movies/11.png" class="op-7 img-fluid w-16" alt="movies6">
 
 
                     </div>
@@ -990,7 +988,7 @@
     
                         <img src="movies/12.png" class="img-fluid w-16" alt="movies6">
 
-                        <img src="movies/13.png" class="img-fluid w-16" alt="movies6">
+                        <img src="movies/13.png" class="op-7 img-fluid w-16" alt="movies6">
 
                     </div>
                 </div>
@@ -1024,7 +1022,7 @@
 
                     <img src="movies/16.png" class="img-fluid w-24" alt="movies4">
 
-                    <img src="movies/17.png" class="img-fluid w-24" alt="movies5">
+                    <img src="movies/17.png" class="op-7 img-fluid w-24" alt="movies5">
 
                     </div>
                     
@@ -1038,7 +1036,7 @@
 
                         <img src="movies/5.png" class="img-fluid w-24" alt="movies6">
     
-                        <img src="movies/7.png" class="img-fluid w-24" alt="movies6">
+                        <img src="movies/7.png" class="op-7 img-fluid w-24" alt="movies6">
                     
 
                     </div>
@@ -1053,7 +1051,7 @@
     
                         <img src="movies/12.png" class="img-fluid w-24" alt="movies6">
 
-                        <img src="movies/13.png" class="img-fluid w-24" alt="movies6">
+                        <img src="movies/13.png" class="op-7 img-fluid w-24" alt="movies6">
 
                     </div>
                 </div>
@@ -1083,7 +1081,7 @@
 
                     <img src="movies/14.png" class="img-fluid w-48" alt="movies2">
 
-                    <img src="movies/15.png" class="img-fluid w-48" alt="movies3">
+                    <img src="movies/15.png" class="op-7 img-fluid w-48" alt="movies3">
 
                     </div>
                     
@@ -1093,7 +1091,7 @@
 
                         <img src="movies/16.png" class="img-fluid w-48" alt="movies6">
     
-                        <img src="movies/17.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/17.png" class="op-7 img-fluid w-48" alt="movies6">
 
                     </div>
 
@@ -1103,7 +1101,7 @@
 
                     <img src="movies/18.png" class="img-fluid w-48" alt="movies2">
 
-                    <img src="movies/11.png" class="img-fluid w-48" alt="movies3">
+                    <img src="movies/11.png" class="op-7 img-fluid w-48" alt="movies3">
 
                     </div>
                     
@@ -1113,7 +1111,7 @@
 
                         <img src="movies/5.png" class="img-fluid w-48" alt="movies6">
     
-                        <img src="movies/7.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/7.png" class="op-7 img-fluid w-48" alt="movies6">
 
                     </div>
 
@@ -1123,7 +1121,7 @@
     
                         <img src="movies/2.png" class="img-fluid w-48" alt="movies6">
 
-                        <img src="movies/3.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/3.png" class="op-7 img-fluid w-48" alt="movies6">
 
                     </div>
                     <div class="carousel-item customCarousel">
@@ -1132,7 +1130,7 @@
     
                         <img src="movies/12.png" class="img-fluid w-48" alt="movies6">
 
-                        <img src="movies/13.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/13.png" class="op-7 img-fluid w-48" alt="movies6">
                     </div>
                 </div>
                                 
@@ -1151,7 +1149,7 @@
         </div>
 
         <!-- #6 -->
-        <div class="carosello">
+        <div class="carosello op-6 ">
                     <!-- carosello 1 lg -->
             <div id="carouselExampleIndicators6-1" class="carousel d-none d-lg-block slide p-4">
 
@@ -1160,8 +1158,6 @@
                 <div class="carousel-inner position-relative">
                     <div class="carousel-item customCarousel active">
 
-                    <!-- <img src="movies/1.png" class="img-fluid w-16" alt="movies1"> -->
-                    
                     <img src="movies/7.png" class="img-fluid w-16" alt="movies1">
 
                     <img src="movies/8.png" class="img-fluid w-16" alt="movies2">
@@ -1174,7 +1170,7 @@
 
                     <img src="movies/12.png" class="img-fluid w-16" alt="movies6">
 
-                    <img src="movies/1.png" class="img-fluid w-16" alt="movies6">
+                    <img src="movies/1.png" class="op-7 img-fluid w-16" alt="movies6">
 
 
                     </div>
@@ -1193,7 +1189,7 @@
     
                         <img src="movies/6.png" class="img-fluid w-16" alt="movies6">
 
-                        <img src="movies/7.png" class="img-fluid w-16" alt="movies6">
+                        <img src="movies/7.png" class="op-7 img-fluid w-16" alt="movies6">
 
                     </div>
                 </div>
@@ -1227,7 +1223,7 @@
 
                     <img src="movies/10.png" class="img-fluid w-24" alt="movies4">
 
-                    <img src="movies/11.png" class="img-fluid w-24" alt="movies5">
+                    <img src="movies/11.png" class="op-7 img-fluid w-24" alt="movies5">
 
                     </div>
                     
@@ -1241,7 +1237,7 @@
 
                         <img src="movies/2.png" class="img-fluid w-24" alt="movies6">
     
-                        <img src="movies/3.png" class="img-fluid w-24" alt="movies6">
+                        <img src="movies/3.png" class="op-7 img-fluid w-24" alt="movies6">
                     
 
                     </div>
@@ -1256,7 +1252,7 @@
     
                         <img src="movies/6.png" class="img-fluid w-24" alt="movies6">
 
-                        <img src="movies/7.png" class="img-fluid w-24" alt="movies6">
+                        <img src="movies/7.png" class="op-7 img-fluid w-24" alt="movies6">
 
                     </div>
                 </div>
@@ -1286,7 +1282,7 @@
 
                     <img src="movies/8.png" class="img-fluid w-48" alt="movies2">
 
-                    <img src="movies/9.png" class="img-fluid w-48" alt="movies3">
+                    <img src="movies/9.png" class="op-7 img-fluid w-48" alt="movies3">
 
                     </div>
                     
@@ -1296,7 +1292,7 @@
 
                         <img src="movies/10.png" class="img-fluid w-48" alt="movies6">
     
-                        <img src="movies/11.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/11.png" class="op-7 img-fluid w-48" alt="movies6">
 
                     </div>
 
@@ -1306,7 +1302,7 @@
 
                     <img src="movies/12.png" class="img-fluid w-48" alt="movies2">
 
-                    <img src="movies/1.png" class="img-fluid w-48" alt="movies3">
+                    <img src="movies/1.png" class="op-7 img-fluid w-48" alt="movies3">
 
                     </div>
                     
@@ -1316,7 +1312,7 @@
 
                         <img src="movies/8.png" class="img-fluid w-48" alt="movies6">
     
-                        <img src="movies/9.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/9.png" class="op-7 img-fluid w-48" alt="movies6">
 
                     </div>
 
@@ -1326,7 +1322,7 @@
     
                         <img src="movies/10.png" class="img-fluid w-48" alt="movies6">
 
-                        <img src="movies/11.png" class="img-fluid w-48" alt="movies6">
+                        <img src="movies/11.png" class="op-7 img-fluid w-48" alt="movies6">
 
                     </div>
                     <div class="carousel-item customCarousel">
@@ -1334,6 +1330,8 @@
                         <img src="movies/11.png" class="img-fluid w-48" alt="movies6">
     
                         <img src="movies/12.png" class="img-fluid w-48" alt="movies6">
+
+                        <img src="movies/7.png" class="op-7 img-fluid w-48" alt="movies6">
                     </div>
                 </div>
                                 
