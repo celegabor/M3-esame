@@ -39,9 +39,13 @@ hr{
     height: 40px;
 }
 
-nav > div > div > ul{
+#listaPagCollegate{
     scale: 0.8;
     margin-left: -40px;
+}
+
+#listaPagCollegate li a{
+    transition: all 0.3s linear;
 }
 
 .el-dropdown{
@@ -59,6 +63,14 @@ nav > div > div > ul{
 }
   
 .overButton:hover{
+    background-color: #000000 !important;
+    color: aliceblue !important;
+    scale: 1.1 !important;
+    transition: all 0.2s linear;
+    border-radius: 10px;
+}
+
+.overButtonNavsx:hover{
     background-color: #000000 !important;
     color: aliceblue !important;
     scale: 1.1 !important;
@@ -191,6 +203,18 @@ nav > div > div > ul{
     color: rgb(166, 164, 164);
     font-size: 0.9em;
 }
+@media  screen and (max-width: 991px) {
+    #listaPagCollegate{
+        width: 22%;
+        margin-left: 40px;
+    }
+    #listaPagCollegate li:hover a{
+        padding-left: 15%;
+        border-left: 6px solid red;
+    }
+}
+
+
 
 @media  screen and (max-width: 800px) {
 
@@ -202,7 +226,33 @@ nav > div > div > ul{
     .carosello2 img{
         flex-basis: 25%;
     }
+    #navbarSupportedContent{
+        width: 100% !important;
+    }
+    #containerNav{
+        width: 100% !important;
+    }
+    #nav{
+        width: 100% !important;
+    }
+
 }
+
+@media screen and (max-width: 650px) {
+    #dx {
+        flex-direction: column-reverse;
+        position: relative;
+    }
+
+    #sectionSearch{
+        position: absolute;
+        right: 0;
+        top: 61px;
+    }
+
+   
+}
+
 
 @media  screen and (max-width: 500px) {
 
@@ -212,7 +262,7 @@ nav > div > div > ul{
     }
     
     .show{
-       scale: 0.7;
+       scale: 0.8;
     }
 
     .carosello2 img{

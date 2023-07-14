@@ -19,8 +19,8 @@
 
     <!-- sezione NAV -->
     <div class="positionNav ">
-        <nav class="z-1 p-3 navbar bg-dark navbar-expand-lg position-relative "  data-bs-theme="dark">
-            <div class="container-fluid">
+        <nav id="nav" class="z-1 p-3 navbar bg-dark navbar-expand-lg position-relative "  data-bs-theme="dark">
+            <div id="containerNav" class="container-fluid">
 
                 <!-- sx -->
             <a class="navbar-brand" href="#">
@@ -32,25 +32,26 @@
             
                 <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
 
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- nav sx -->
+                    <ul id="listaPagCollegate" class="navbar-nav ml-5 mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="overButton nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="overButtonNavsx nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="overButton nav-link" href="#">TV Shows</a>
+                            <a class="overButtonNavsx nav-link" href="#">TV Shows</a>
                         </li>
                         <li class="nav-item">
-                            <a class="overButton nav-link" href="#">Movies</a>
+                            <a class="overButtonNavsx nav-link" href="#">Movies</a>
                         </li>
                         <li class="nav-item">
-                            <a class="overButton nav-link" href="#">Recently Added</a>
+                            <a class="overButtonNavsx nav-link" href="#">Recently Added</a>
                         </li>
                         <li class="nav-item">
-                            <a class="overButton nav-link" href="#">My List</a>
+                            <a class="overButtonNavsx nav-link" href="#">My List</a>
                         </li>
                     </ul>
 
-                    <!-- dx -->
+                    <!-- nav dx -->
                     <section id="dx" class="position-absolute top-50 end-0 translate-middle-y d-flex position-absolute top-md-50">
         
                         <!-- search -->
@@ -63,32 +64,35 @@
                             </div>
                         </div>
 
-                        <!-- kids -->
-                        <button class="btn overButton" type="submit">
-                            KIDS
-                        </button>
-
-                        <!-- bell -->
-                        <button class="btn " type="submit">
-                            <i class="overButton fa-solid fa-bell" style="color: #ffffff;"></i>
-                        </button>
-
-                        <!-- profile -->
-                        <div class="dropdown">
-                            <button class="position-relative btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img class="imgLogo scale-8 " src="movies/fotoboh.png" alt="">
+                        <div id="iconsNav" class="d-flex">
+                            <!-- kids -->
+                            <button class="btn overButton" type="submit">
+                                KIDS
                             </button>
-                            <ul class="el-dropdown dropdown-menu overflow-hidden">
-                            <li><a class="overButton dropdown-item" href="#">
-                                <i class="overButton m-3 fa-solid fa-user" style="color: #ffffff;"></i>
-                                Profile</a></li>
-                            <li><a class="overButton dropdown-item" href="#">
-                                <i class="m-3 fa-solid fa-users" style="color: #ffffff;"></i>
-                                Accounts</a></li>
-                            <li><a class="overButton dropdown-item" href="#">
-                                <i class="m-3 fa-solid fa-ellipsis" style="color: #ffffff;"></i>
-                                Other</a></li>
-                            </ul>
+
+                            <!-- bell -->
+                            <button class="btn " type="submit">
+                                <i class="overButton fa-solid fa-bell" style="color: #ffffff;"></i>
+                            </button>
+
+                            <!-- profile -->
+                            <div class="dropdown">
+                                <button class="position-relative btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="imgLogo scale-8 " src="movies/fotoboh.png" alt="">
+                                </button>
+                                <ul class="el-dropdown dropdown-menu overflow-hidden">
+                                <li><a class="overButton dropdown-item" href="#">
+                                    <i class="overButton m-3 fa-solid fa-user" style="color: #ffffff;"></i>
+                                    Profile</a></li>
+                                <li><a class="overButton dropdown-item" href="#">
+                                    <i class="m-3 fa-solid fa-users" style="color: #ffffff;"></i>
+                                    Accounts</a></li>
+                                <li><a class="overButton dropdown-item" href="#">
+                                    <i class="m-3 fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                                    Other</a></li>
+                                </ul>
+                            </div>
+
                         </div>
 
                         
