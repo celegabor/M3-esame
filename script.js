@@ -1,8 +1,8 @@
 
-window.addEventListener('load', function() {
-    alert('Ciao! In questa copia non ho collegato nessun link/tasto. Ho invece aggiunto la particolarità di poter scegliere come visualizzare le immagini dei film (carosello o griglia)');
+// window.addEventListener('load', function() {
+//     alert('Ciao! In questa copia non ho collegato nessun link/tasto. Ho invece aggiunto la particolarità di poter scegliere come visualizzare le immagini dei film (carosello o griglia)');
 
-  });
+//   });
   
 
 // sezione carosello in mezzo alla pag
@@ -16,7 +16,7 @@ window.addEventListener('scroll', function(){
 
     let opacity = document.getElementsByClassName('op-6')
 
-    // regolo la metà dello schermo in base alle 3 risoluzioni per correggere il priblema che la prima riga se tengo il 50% preciso non entra ciclo sotto
+    // regolo la metà dello schermo in base alle 3 risoluzioni per correggere il problema che la prima riga se tengo il 50% preciso non entra ciclo sotto
     let altezza2 = 0;
     
     if (window.innerWidth > 575 && window.innerWidth < 991){
