@@ -1,10 +1,3 @@
-
-// window.addEventListener('load', function() {
-//     alert('Ciao! In questa copia non ho collegato nessun link/tasto. Ho invece aggiunto la particolarità di poter scegliere come visualizzare le immagini dei film (carosello o griglia)');
-
-//   });
-  
-
 // sezione carosello in mezzo alla pag
 
 window.addEventListener('scroll', function(){
